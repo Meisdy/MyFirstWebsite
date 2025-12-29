@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sandy Meister - Personal Website</title>
   <style>
-    /* Add your CSS styles here */
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
@@ -52,7 +51,7 @@
     }
 
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 20px;
       background-color: #fff;
@@ -61,7 +60,34 @@
 
     h2 {
       color: #333;
-      margin-top: 40px;
+      margin-top: 20px;
+    }
+
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .intro-text {
+      flex: 2 1 260px;
+    }
+
+    .intro-meta {
+      flex: 1 1 200px;
+      background-color: #f0f0f0;
+      padding: 15px;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    .intro-meta p {
+      margin: 6px 0;
+    }
+
+    ul {
+      margin-top: 10px;
     }
 
     footer {
@@ -93,19 +119,43 @@
   </nav>
 
   <main>
-    <h2>Welcome to my Personal Website</h2>
-    <p>This is where you can learn more about me and my work as a systems engineer with a focus on mechatronics.</p>
-    <p>Explore the different sections of my website to discover more about my background, projects, and interests.</p>
-    <ul>
-      <li><a href="cv.html">View my CV</a></li>
-      <li><a href="#">Learn more about me</a></li>
-      <li><a href="#">Explore my projects</a></li>
-      <li><a href="#">Get in touch</a></li>
-    </ul>
+    <section class="intro">
+      <div class="intro-text">
+        <h2>Robotics & Automation Engineer in Training</h2>
+        <p>
+          I am a MSc student in Robotics and Automation at University West, focusing on industrial robotics, 
+          computer vision and modular speech-to-cobot systems.
+        </p>
+        <p>
+          Previously, I completed a BSc in Systems Engineering (Robotics & Mechatronics) at ZHAW and an 
+          apprenticeship as an automation engineer at Syntegon, where I worked on complete packaging lines 
+          from electrical design to commissioning.
+        </p>
+        <p>
+          On this site you can explore my CV, selected robotics and vision projects, and how to get in touch 
+          for collaborations, internships or thesis work.
+        </p>
+        <ul>
+          <li><a href="cv.html">View my CV</a></li>
+          <li><a href="#">Read more about my background</a></li>
+          <li><a href="#">Explore robotics & vision projects</a></li>
+          <li><a href="#">Contact me</a></li>
+        </ul>
+      </div>
+      <aside class="intro-meta">
+        <p><strong>Current focus:</strong><br>MSc Robotics &amp; Automation, University West (until 2026)</p>
+        <p><strong>Key topics:</strong><br>Industrial robots (ABB, Franka, UR), RobotStudio, Python, OpenCV, PyTorch</p>
+        <p><strong>Interests:</strong><br>Dynamic robotics, high‑end technology, BEVs, calisthenics, kitesurfing</p>
+        <p><strong>Links:</strong><br>
+          <a href="https://www.linkedin.com/in/sandy-meister" target="_blank">LinkedIn</a><br>
+          <a href="https://www.github.com/Meisdy" target="_blank">GitHub</a>
+        </p>
+      </aside>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2023 Sandy Meister. All rights reserved.</p>
+    <p>&copy; 2025 Sandy Meister. All rights reserved.</p>
   </footer>
 </body>
 </html>
